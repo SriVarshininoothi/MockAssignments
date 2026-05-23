@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="./StudentRegistrationForm.css"></link>
+</head>
+
+<body>
+    <div class="student">
+    <h1>Student Registration Form</h1>
+    
+<!-- form -->
+    <form>
+        <label for="name">Enter your Name:</label>
+        <input type="text" id="name" placeholder="Enter your name...." style="margin-left: 20px;">
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Enter your email...." style="margin-left: 20px;">
+        <br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" placeholder="Enter your password...." style="margin-left: 20px;">
+        <br><br>
+
+        <label for="gender">Gender</label>
+        
+        <input type="radio" id="gender" name="gender" value="Male">
+        <label for="gender">Male</label>
+        <input type="radio" id="gender" name="gender" value="Female">
+        <label for="gender">Female</label>
+
+        <br><br>
+        <label for="dept">Department</label>
+        <select id="dept">
+            <option value="">Select a department</option>
+            <option>CSE</option>
+            <option>IT</option>
+            <option>ECE</option>
+            <option>EEE</option>
+            <option>MECH</option>
+            <option>CIVIL</option>
+        </select>
+
+        <br><br>
+        <!-- <label style="margin-left: 250px;">Address</label> -->
+        <textarea id="address" placeholder="Enter your address...." rows="5" cols="50" style="margin-left: 20px ;margin-top:5px"></textarea>
+
+        <br><br>
+        <button type="submit" class="bt">Submit</button>
+    </form>
+</div>
+
+</body>
+
+</html>

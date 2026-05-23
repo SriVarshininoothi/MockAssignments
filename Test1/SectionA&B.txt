@@ -1,0 +1,158 @@
+
+
+#Section A
+
+HTML
+
+1. Hyper Text Markup Language
+2. <h1>
+3. <p>
+4. <img>
+5. href
+6. <form>
+7. hidden
+8. <select>
+9. <tr>
+10. <th>
+11. <nav>
+12. <footer>
+
+CSS
+13. Cascading Style Sheets
+14. Class Selector
+15. ID selector
+16. color
+17. Padding
+18. background-color
+19. font-size
+20. External CSS
+========================================================================================================
+
+# Section B
+21.
+
+FrontEnd:
+It mainly focus on creating visual Websites and applications that users interact directly.
+It can be develop by using HTML,CSS and Js.
+HTML - Structure of a page
+CSS - Styling of a page
+Js - interaction of a page
+
+BackEnd:
+It is mainly focus on handling logic on backend servers ,logs and API's.It fetech information from Database and send respond back to client/user.
+It can be develop by using Python,Java,Node.js.
+
+
+-------------------------------------------------------------------------------------------------------------
+22. Basic HTML Doc
+
+<!Doctype html>
+<html lag="en">
+<head>
+    <title>Html Document</title>
+</head>
+<body>
+    <h1>Hello World!<h1>
+    <p>This is html parapragh.</p>
+</body>
+</html>
+
+------------------------------------------------------------------------------------------------------------
+23. <form> tag is used to Collect information and store in forms.
+It contains labels and input.
+Example: Registration Form , CollegeAdmission Form, Feedback Form
+
+<form>
+    <label>
+        <input />
+    </label>
+</form>
+
+--------------------------------------------------------------------------------------------------------------
+24.
+OrderedList:-
+Used to store in the form of Numerical values.
+ex:- <ol>
+        <li>java</li>
+        <li>Python<li>
+    </ol>
+
+    output: 1.java
+            2.Python
+
+UnOrderedList:-
+Used to store in the form of Bullet Styles.
+ex:-<ul>
+        <li>Java</li>
+        <li>Python<li>
+        <li>HTML</li>
+    </ul>
+
+output: . Java
+        . Python
+        . HTML
+-------------------------------------------------------------------------------------------------------------------
+
+25.
+Semantic HTML:It describe the elements used in creating a webpage.Clearly understand the context of a tag used in html.
+Tag have a meaning.
+Ex:- 
+h1 - Used for heading
+p - parapragh
+img -  creating image
+
+<header>,<footer>,<nav>,<article> and <section>
+
+--------------------------------------------------------------------------------------------------------------------
+26.
+
+Margin:
+It is used to create space outside of any defined borders.
+ex:-
+margin-left:12px;
+margin-right:13px;
+margin-top : 10px:
+margin-bottom: 12px;
+
+Padding:
+It is used to create space between border and defined element.
+ex:-
+padding:12px;
+
+---------------------------------------------------------------------------------------------------------------------------
+27.
+
+CSS(Cascading Styling Sheets)
+Css is used to creat stylesheets.It creates layouts,borders,margins for a webpage.
+There are 3 different types of CSS:
+1.Inline CSS
+2.Internal CSS
+3.External CSS
+
+---------------------------------------------------------------------------------------------------------------------------
+28.
+
+class selector:Classes are reuable in a webpage.
+
+ex: - HTML
+<h1 class = "headline">This is a heading tag in Html </h1>
+
+Css
+.headline{
+    font-size:20px;
+    color:pink;
+}
+
+
+ID Selector: create only one id in a webpage.
+
+ex:- HTML
+<h2 id="book">Book Store</h2>
+
+Css
+#book {
+
+    color:blue;
+    text-decoration:Underline;
+
+}

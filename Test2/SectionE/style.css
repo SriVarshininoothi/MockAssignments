@@ -1,12 +1,49 @@
-.navbar-container{
+.navbar-container {
     background-color: aqua;
-    height: auto;
 }
-.container{
+
+/* Hero Section */
+.hero .container {
     background-color: #f8f9fa;
     padding: 80px;
+    border-radius: 12px;
 }
-.image{
+
+.image {
     width: 100%;
     border-radius: 12px;
+}
+
+/* Card Hover Effects */
+.feature-card:hover,
+.course-card:hover,
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+}
+
+/* Footer */
+footer {
+    background-color: #212529;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: aqua;
+}
+
+footer p {
+    margin-top: 15px;
+    font-size: 14px;
+    margin-bottom: 0;
 }

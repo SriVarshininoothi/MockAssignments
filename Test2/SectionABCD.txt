@@ -7,7 +7,7 @@ HTML
 3. id
 4. email
 5. tr
-
+=====================================================
 #Section B
 CSS
 
@@ -16,7 +16,7 @@ CSS
 3.background-color
 4.%
 5.border-radius
-
+============================================================
 #Section C
 Bootstarp
 
@@ -26,7 +26,7 @@ Bootstarp
 4.  12
 5.  justify-content-center
 
-
+===============================================================
 #Section D
 
 Debugging
@@ -52,6 +52,15 @@ Debugging
     </button>
 
 5.  .hero{
-    width:100
+    width:100vw;
+    overflow-x:hidden;
+}
+    Because 100vw means 100% of the viewport width including the vertical scrollbar.
+    Use :
+ .hero{
+    width:100%;
+    overflow-x:hidden;
+}
+ 
+
     
-    }

@@ -1,0 +1,12 @@
+.navbar-container{
+    background-color: aqua;
+    height: auto;
+}
+.container{
+    background-color: #f8f9fa;
+    padding: 80px;
+}
+.image{
+    width: 100%;
+    border-radius: 12px;
+}

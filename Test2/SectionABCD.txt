@@ -1,0 +1,57 @@
+#Section A
+
+HTML
+
+1. <form>
+2. <main>
+3. id
+4. email
+5. tr
+
+#Section B
+CSS
+
+1.margin
+2.display:flex
+3.background-color
+4.%
+5.border-radius
+
+#Section C
+Bootstarp
+
+1.  .container
+2.  .row
+3.  .btn-green
+4.  12
+5.  justify-content-center
+
+
+#Section D
+
+Debugging
+
+1. <img src="profile.jpg">
+
+2.  .card{
+    display:flex;
+}
+
+3.  <div class="container>
+    <div class="row">
+        <div class="col-md-6>
+            Content
+        </div>
+    </div>
+        
+
+    </div>
+
+4.  <button class="btn btn-primary">
+        Submit
+    </button>
+
+5.  .hero{
+    width:100
+    
+    }

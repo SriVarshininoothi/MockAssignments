@@ -87,7 +87,7 @@ let b = 10;
 
 &&  console.log(a&&b);
 ||  console.log(a||b);
-!   console.log(a!b);
+!   console.log(!a);
 
 ------------------------------------------------------------------------
 
@@ -109,7 +109,7 @@ let marks = 20;
 if(age>35){
     console.log("Pass");
 }else if(age<35){
-    console.log("Fail); 
+    console.log("Fail"); 
 }
 
 else  - It will Execute at last if above if and else if not true.
@@ -140,7 +140,7 @@ switch(day)
         break;
 
     case 2:
-        console.log("Tuesday);
+        console.log("Tuesday");
         break;
 
     default:
@@ -202,7 +202,7 @@ o/p = 9
 
 Arrow function :
 
-Const greet =()=>{
+Const greet = () => {
     console.log("Hello");
 }
 
@@ -325,13 +325,13 @@ console.log(fruits);
 
 4.shift()- Remove at Beginning.
 fruits.shift();
-console.log.fruits;
+console.log.(fruits);
 
 5.splice() - modify te array
 
 array(start,delete count,items);
 
-fruits(1,1,"Kiwi");
+fruits.splice(1,1,"Kiwi");
 console.log(fruits);
 
 

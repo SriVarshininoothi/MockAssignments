@@ -1,0 +1,45 @@
+.main{
+ 
+    
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: bisque; 
+    padding: 20px;
+    height: 100vh;
+}
+
+.box{
+
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 450px;
+    height:350px;
+    border-radius: 12px;
+    padding: 50px;
+
+}
+
+.green{
+    color: green;
+}
+.red{
+    color: red;
+}
+
+.black{
+    color: black;
+}
+
+.btn{
+    border-radius: 1px;
+    border-width: 0px;
+    background-color: rgb(230, 163, 139);
+    font-size: 24px;
+    padding: 6px;
+}

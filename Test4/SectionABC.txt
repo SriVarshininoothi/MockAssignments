@@ -1,0 +1,24 @@
+## Section A
+
+1. both let and const
+2. Interpreted
+3. querySelector()
+4. 55
+5. ===
+6. do...while
+7. continue
+8. 10
+9. arguments
+10. push()
+11. shift()
+12. Bracket notation
+13. textContent
+14. click
+15. map()
+16. some()
+17. test()
+18. setInterval()
+19. let
+20. access outer variables
+
+

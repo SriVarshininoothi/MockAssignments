@@ -42,3 +42,38 @@
 30. 1 
     2
 
+
+## Section C 
+
+31. let age =20;
+    age = 30;
+
+32.  let arr =[1,2,3];
+     console.log(arr.length);
+
+33. document.getElementById("title);
+
+34. for(let i=1;i<=5;i++){
+        //body
+    }
+
+35. let num = "10";
+    console.log(Number(num) + 5);
+
+36. let user = {
+        name: "John
+    }
+    console.log(user.name);
+
+37. let a = 10;
+    console.log(a);
+
+38. setInterval(() => {
+    console.log("Hello");
+    },1000);
+
+39. let arr = [1,2,3];
+    arr.map(val => console.log(val));
+
+40. const regex = /^[0-9]$/;
+

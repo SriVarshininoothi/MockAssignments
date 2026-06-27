@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="main">
+        <form id="myform">
+            <h2>Student Management System</h2>
+            <div class="box">
+
+                <label for="name">Name</label>
+                <input id="name" type="text" class="form-control"  />
+                <p id="nameError"></p>
+
+                <label for="marks">Marks</label>
+                <input id="marks" type="number" class="form-control" />
+                <p id="marksError"></p>
+
+
+                <div class="card">
+                    <button id="add" class="button" type="submit">Add Student</button>
+                    <button id="display" class="button" type="button">Display</button>
+                    <button id="search" class="button" type="button">Search</button>
+                    <button id="average" class="button" type="button">Average</button>
+                    <button id="topper" class="button" type="button">Topper</button>
+
+                </div>
+    
+            </div>
+
+           
+        </form>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>

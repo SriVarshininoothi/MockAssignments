@@ -150,3 +150,27 @@ search.addEventListener("click", function () {
 
 });
 
+
+//calculate average
+
+average.addEventListener("click", function () {
+
+    if (students.length === 0) {
+        alert("No students to calculate average.");
+        return ;
+    }
+
+    let total = 0;
+
+    for (let i = 0; i < students.length; i++) {
+
+        total += students[i].marks;
+    }
+
+    let avg = total / students.length;
+
+    alert("Average Marks: " + avg);
+
+
+});
+

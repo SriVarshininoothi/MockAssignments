@@ -11,17 +11,15 @@
 
 }
 
-.box{
-
+.box {
     background-color: white;
     padding: 20px;
     text-align: center;
     align-items: center;
     justify-content: center;
     width: 450px;
-    height:350px;
+    min-height: 350px;
     border-radius: 12px;
-
 }
 .form-control{
     min-width: 60%;

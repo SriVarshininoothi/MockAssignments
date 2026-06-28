@@ -24,31 +24,31 @@ let marksregex = /^(100|[0-9]{1,2})$/;
 
 let students = [];
 
-form.addEventListener("submit",function(e){
+form.addEventListener("submit", function (e) {
 
     e.preventDefault();
 
     let name = nameInput.value.trim();
     let marks = marksInput.value.trim();
-    
-    if(!nameregex.test(name)){
+
+    if (!nameregex.test(name)) {
         nameError.textContent = "Enter Valid Name";
         nameError.classList.add("red");
         nameError.classList.remove("green");
         return;
 
-    }else{
+    } else {
         nameError.classList.add("green");
         nameError.classList.remove("red");
     }
 
-    if(!marksregex.test(marks)){
+    if (!marksregex.test(marks)) {
         marksError.textContent = "Enter Valid marks";
         marksError.classList.add("red");
         marksError.classList.remove("green");
         return;
 
-    }else{
+    } else {
         marksError.classList.add("green");
         marksError.classList.remove("red");
     }
@@ -56,8 +56,8 @@ form.addEventListener("submit",function(e){
 
     let student = {
 
-        "name":name,
-        "marks":Number(marks)
+        "name": name,
+        "marks": Number(marks)
     };
 
     students.push(student);
@@ -69,20 +69,128 @@ form.addEventListener("submit",function(e){
 
 });
 
-function addStudents(){
 
-    let innerHtml = "";
+//add
+function addStudents() {
 
-    for(let i=0;i<students.length;i++){
 
-        innerHtml += `
-        <li style="margin-top:20px;"> 
-        Name: ${students[i].name}
-        Marks: ${students[i].marks}
-        </li>
-        `;
+        alert("Added students successfully!")
+    
+};
 
+//display
+
+display.addEventListener("click", function () {
+
+    if (students.length === 0) {
+        alert("No students found.");
+        return;
     }
-    display.innerHTML = innerHtml;
 
-}
+    let result = `
+    <table border ="1" style="width:60%; text-align:left; border-collapse:collapse;margin-top:15px;">
+    <thead>
+
+        <tr style="background-color: #f2f2f2;">
+            <th style ="padding:8px;">Name</th>
+            <th style="padding:8px;">Marks</th>
+        </tr>
+    </thead>
+    <tbody>
+    
+    `;
+
+    for (let i = 0; i < students.length; i++) {
+
+        result += `
+
+        <tr>
+            <td style ="padding:8px;">${students[i].name} </td>
+            <td style ="padding:8px;">${students[i].marks} </td>
+            
+        </tr>
+        
+        
+        `;
+    }
+
+    result += `
+    </tbody>
+    </table>
+    
+    `;
+
+    document.getElementById("studentList").innerHTML = result;
+
+});
+
+//search
+
+search.addEventListener("click", function () {
+
+    if (students.length === 0) {
+        alert("No students to search");
+        return;
+    }
+
+    let searchName = prompt("Enter student name to search: ");
+    let found = false;
+
+    for (let i = 0; i < students.length; i++) {
+        if (students[i].name.toLowerCase() === searchName.trim().toLowerCase()) {
+            alert("Student Found!\nName: " + students[i].name + "\nMarks: " + students[i].marks);
+            found = true;
+            break;
+        }
+    }
+
+    if (!found) {
+        alert("Student not found");
+    }
+
+});
+
+
+//calculate average
+
+average.addEventListener("click", function () {
+
+    if (students.length === 0) {
+        alert("No students to calculate average.");
+        return ;
+    }
+
+    let total = 0;
+
+    for (let i = 0; i < students.length; i++) {
+
+        total += students[i].marks;
+    }
+
+    let avg = total / students.length;
+
+    alert("Average Marks: " + avg);
+
+
+});
+
+
+// topper
+
+topper.addEventListener("click", function () {
+    if (students.length === 0) {
+        alert("No students available.");
+        return;
+    }
+
+    let highestmarks = students[0];
+
+    for(let i=1;i<students.length;i++){
+        if(students[i].marks > highestmarks.marks){
+            highestmarks = students[i];
+
+        }
+    }
+    alert("Topper is: "+ highestmarks.name + " with "+ highestmarks.marks+" marks!");
+
+});

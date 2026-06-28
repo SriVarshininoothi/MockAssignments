@@ -174,3 +174,23 @@ average.addEventListener("click", function () {
 
 });
 
+
+// topper
+
+topper.addEventListener("click", function () {
+    if (students.length === 0) {
+        alert("No students available.");
+        return;
+    }
+
+    let highestmarks = students[0];
+
+    for(let i=1;i<students.length;i++){
+        if(students[i].marks > highestmarks.marks){
+            highestmarks = students[i];
+
+        }
+    }
+    alert("Topper is: "+ highestmarks.name + " with "+ highestmarks.marks+" marks!");
+
+});

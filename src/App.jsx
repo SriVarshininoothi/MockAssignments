@@ -6,6 +6,7 @@ import Counter from './Test5/Counter'
 import Props from './Test5/props'
 import './App.css'
 import RegistrationForm from './Test5/RegistrationForm'
+import FormValidation from './Test5/FormValidation'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -15,7 +16,8 @@ function App() {
 
     // <Counter/>
     // <Props/>
-    <RegistrationForm/>
+    // <RegistrationForm/>
+    <FormValidation/>
 
 
   )

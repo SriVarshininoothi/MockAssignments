@@ -15,3 +15,70 @@
 
 ## Section B
 
+1.
+ Real DOM = It is Represented by tree like structure created by Browser.
+JavaScript is used to manage it.Direct manipulation update the UI .
+
+  
+  Virtual DOM = It is the copy of Real Dom.It is In memory by react.
+  Diffing algorithm is used to  compare the changes between real DOM and Virtual DOM
+
+
+------------------------------------------------------------------------------------------------------------------
+2. useState is a React hook used to store state.It is used to create and manage inside componenet.
+
+import React, { useState } from 'react';
+
+const Counter = () =>{
+
+    //store count
+const[count,setCount]=useState(0);
+
+//handleIncrement
+
+const handleIncrement = ()=>{
+    setCount(count+1);
+
+}
+
+return(
+    <div>
+        <button onClick = {handleIncrement}>Add</button>
+    </div>
+)
+
+}
+export default Counter;
+---------------------------------------------------------------------------------------------------------------------
+
+3. useEffect() is a react hook used for sideEffects.It is used for outside the Components
+
+used for Fetching API,setTimers,
+
+
+import react,{useEffect} from "React";
+
+
+useEffect(() => {
+  fetch('https://api.example.com/data')
+    .then(res => res.json())
+    .then(data => setData(data));
+}, []); 
+
+
+----------------------------------------------------------------------------------------------------------------------------
+4. Props are used for data passed from parent to child.
+
+// Parent Component
+<StudentCard name="Alex" course="React" college="ABC Institute" />
+
+// Child Component
+const StudentCard = (props) => {
+  return <h2>{props.name} - {props.course}</h2>;
+};
+
+
+-----------------------------------------------------------------------------------------------------
+
+5. It provides styled components (like buttons, forms, and navbars) so you don't have to write custom CSS from scratch.
+It is automaticllay make your web pages look good on all devices.

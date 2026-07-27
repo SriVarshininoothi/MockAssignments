@@ -1,0 +1,17 @@
+#Section A
+
+
+1. JavaScript Library for Building UI
+2. Components
+3. npm create vite@latest
+4. Copy of Real DOM used for faster updates
+5. Diffing algorithm
+6. useState()
+7. setCount(count + 1)
+8. Side Effects
+9. []
+10. Data passed from Parent to Child
+
+
+## Section B
+

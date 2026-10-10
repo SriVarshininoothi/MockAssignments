@@ -1,0 +1,25 @@
+
+# Section A
+
+1.  React is a Open-Source JavaScript Library developed by Meta used for building UI and Single Page Applications.
+With out Reloading the Page, it will render only update Component.
+
+Used: 
+Component Reused
+Virtual DOM
+
+
+2. JSX (JavaScript XML)
+
+It is Extension of JavaScript used in React that allow to write HTML like structure inside JavaScript files.
+It follows few rules :-
+1. Class attribute into className.
+2. curly braces {} for component render dynamically.
+3. <></> or <div> </div> allow to write inside Fragrance
+
+
+3. 
+
+
+
+4.  Virtual DOM is lightweight in-memory representation of Real DOM.When state changes,react compare old DOM and new Virtual DOm
